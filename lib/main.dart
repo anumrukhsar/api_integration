@@ -58,7 +58,6 @@ Future<List<Post>> fetchPosts(http.Client client) async {
 // Cast Response to Object
 List<Post> parsePosts(String responseBody) {
   final parseVal = jsonDecode(responseBody).cast<Map<String, dynamic>>();
-
   return parseVal.map<Post>((json) => Post.fromJson(json)).toList();
 }
 

@@ -36,11 +36,11 @@ class SubItemWidget extends StatelessWidget{
    return  Row(
      crossAxisAlignment: CrossAxisAlignment.start,
      children: [
-       Expanded(flex:1,child: Text(
+       Expanded(flex:2,child: Text(
          '$label:',
          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
        ),),
-       Expanded(flex:9,child: Text(
+       Expanded(flex:8,child: Text(
          val,
          style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
        ),),
